@@ -2,111 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ZYNIQ</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      background: #000;
-      color: #cfca4b;
-      font-family: 'Orbitron', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    .logo {
-      width: 150px;
-      height: 150px;
-      animation: spinIn 1.5s ease-in-out;
-    }
-
-    @keyframes spinIn {
-      0% {
-        opacity: 0;
-        transform: scale(0.3) rotate(-360deg);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1) rotate(0deg);
-      }
-    }
-
-    h1 {
-      margin: 20px 0 10px;
-      font-size: 2.5rem;
-      letter-spacing: 4px;
-      animation: fadeInUp 1s ease-in;
-    }
-
-    p {
-      font-size: 1rem;
-      color: #a31b1b;
-      max-width: 600px;
-      animation: fadeInUp 1.5s ease-in;
-    }
-
-    .button-container {
-      margin-top: 40px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      animation: fadeInUp 2s ease-in;
-    }
-
-    button {
-      background-color: #24a8c6;
-      border: none;
-      color: #514e4e;
-      font-weight: bold;
-      padding: 12px 24px;
-      font-size: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background-color: #00cccc;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 15px;
-      color: #555;
-      font-size: 0.9rem;
-      font-style: italic;
-      animation: fadeInUp 2.5s ease-in;
-    }
-
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYNIQ – Fact Check Bot</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <img src="logo.jpg" alt="ZYNIQ Logo" class="logo">
-  <h1>ZYNIQ</h1>
-  <p>Empowering Truth through AI – Decode misinformation, verify facts, and elevate your online experience with the power of ZYNIQ.</p>
+  <header>
+    <div class="navbar">
+      <h1 class="logo">ZYNIQ</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="welcome">👋 Welcome, truth-seeker!</div>
+  </header>
 
-  <div class="button-container">
-    <button onclick="window.location.href='mailto:youremail@example.com?subject=Feedback%20for%20ZYNIQ'">Send Feedback</button>
-    <button onclick="window.location.href='https://instagram.com/your_instagram_username'">Send DM</button>
-  </div>
+  <main class="hero">
+    <div class="hero-text">
+      <h2>Fact-checking, reimagined.</h2>
+      <p>Verify any post or message on Instagram or Facebook with our smart bot.</p>
+      <div class="buttons">
+        <a href="mailto:your@email.com" class="btn">Send Feedback</a>
+        <a href="https://instagram.com/yourusername" class="btn">Send DM</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="logo.png.PNG" alt="go fuck your ass you motherfucker" width="200">
+    </div>
+  </main>
 
-  <footer>Created by Alok </footer>
+  <section class="about">
+    <h3>Why ZYNIQ?</h3>
+    <p>
+      ZYNIQ is your digital ally for truth. We analyze suspicious posts using real-time internet data and deliver verified answers through a simple message. 
+      No app installs. No noise. Just pure clarity.
+    </p>
+    <ul>
+      <li>🌐 Works on both Instagram & Facebook</li>
+      <li>🧠 Powered by smart web analysis</li>
+      <li>🔒 Private and secure</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>All rights reserved | Created by Mukund and Alok</p>
+  </footer>
 
 </body>
 </html>
